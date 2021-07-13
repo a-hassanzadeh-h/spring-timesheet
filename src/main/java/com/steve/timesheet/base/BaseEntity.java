@@ -1,5 +1,6 @@
 package com.steve.timesheet.base;
 
+import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -8,16 +9,17 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.util.Date;
 
+@Data
 @MappedSuperclass
 public abstract class BaseEntity {
 
     @Id
     @GeneratedValue
-    private long id;
+    protected long id;
 
     @CreationTimestamp
-    private Date created;
+    protected Date created;
 
     @UpdateTimestamp
-    private Date updated;
+    protected Date updated;
 }
