@@ -1,6 +1,5 @@
-package com.steve.timesheet.app.task;
+package com.steve.timesheet.app.story;
 
-import com.steve.timesheet.app.story.Story;
 import com.steve.timesheet.base.BaseEntity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,7 +13,7 @@ import java.util.Date;
 @Data
 @Entity
 @NoArgsConstructor
-public class Task  extends BaseEntity {
+public class Story  extends BaseEntity {
 
     private LocalDateTime startTime;
 
