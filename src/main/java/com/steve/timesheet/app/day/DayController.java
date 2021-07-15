@@ -1,17 +1,16 @@
-package com.steve.timesheet.app.task;
+package com.steve.timesheet.app.day;
 
 import com.steve.timesheet.base.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/task")
-public class TaskController extends BaseController<Task,TaskService> {
+@RequestMapping("/day")
+public class DayController extends BaseController<Day, DayService> {
 
     @Autowired
-    public TaskController(TaskService service) {
+    public DayController(DayService service) {
         super(service);
     }
 }

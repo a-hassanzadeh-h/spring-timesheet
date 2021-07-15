@@ -1,4 +1,4 @@
-package com.steve.timesheet.app.story;
+package com.steve.timesheet.app.day;
 
 
 import com.steve.timesheet.base.BaseService;
@@ -7,10 +7,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
 
 @Service
-public class StoryService extends BaseService<Story,StoryRepository> {
+public class DayService extends BaseService<Day, DayRepository> {
 
     @Autowired
-    public StoryService(ApplicationContext context, StoryRepository repository) {
+    public DayService(ApplicationContext context, DayRepository repository) {
         super(context, repository);
     }
 }
